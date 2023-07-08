@@ -10,48 +10,52 @@
 
 <body>
     <header>
-        <h1>Mi Portafolio</h1>
         <nav>
-            <ul>
-                <li><a href="#about">Sobre mí</a></li>
+            <div class="logo">Logo</div>
+            <ul class="nav-links">
+                <li><a href="#about">About me</a></li>
                 <li><a href="#projects">Proyectos</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <section id="about">
-            <h2>Sobre mí</h2>
-            <p>¡Hola! Soy [Nombre], un apasionado desarrollador web con experiencia en HTML, CSS y JavaScript. Me
-                encanta crear sitios web hermosos y funcionales que proporcionen una gran experiencia al usuario.</p>
-        </section>
+    <section id="about">
+        <h2>About me</h2>
+        <p>Contenido sobre mí.</p>
+    </section>
 
-        <section id="projects">
-            <h2>Proyectos</h2>
+    <section class="center">
+        <h2 class="center">Proyectos</h2>
+        <div id="projects">
             <div class="project">
-                <h3>Proyecto 1</h3>
-                <p>Descripción del proyecto 1.</p>
+                <h3>Nombre del proyecto 1</h3>
+                <p>Breve descripción del proyecto.</p>
+                <img src="imagen1.jpg" alt="Vista previa del proyecto">
+                <a href="#" target="_blank">Abrir proyecto</a>
             </div>
             <div class="project">
-                <h3>Proyecto 2</h3>
-                <p>Descripción del proyecto 2.</p>
+                <h3>Nombre del proyecto 2</h3>
+                <p>Breve descripción del proyecto.</p>
+                <img src="imagen2.jpg" alt="Vista previa del proyecto">
+                <a href="#" target="_blank">Abrir proyecto</a>
             </div>
-        </section>
+            <!-- Agregar más proyectos aquí -->
+        </div>
+    </section>
 
-        <section id="contact">
-            <h2>Contacto</h2>
-            <form>
-                <input type="text" placeholder="Nombre">
-                <input type="email" placeholder="Correo electrónico">
-                <textarea placeholder="Mensaje"></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Información de contacto.</p>
+    </section>
 
     <footer>
-        <p>Derechos de autor &copy; 2023 | Mi Portafolio</p>
+        <p>Derechos de autor © 2023</p>
     </footer>
     <script src="js/portafolio.js"></script>
 </body>
